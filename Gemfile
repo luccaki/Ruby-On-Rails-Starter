@@ -12,6 +12,7 @@ gem "stimulus-rails"
 gem "jbuilder"
 gem "tzinfo-data"
 gem "bootsnap", require: false
+gem 'jquery-rails'
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]

@@ -12,11 +12,15 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <%= javascript_include_tag "application" %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
   </head>
   <body>
     <%= render "home/header"%>
     <div class="container">
+      <%if notice%>
+        <%= render 'layouts/alerts'%>
+      <%end%>
       <br/><br/>
       <%= yield %>
     </div>
